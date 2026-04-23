@@ -1,0 +1,33 @@
+## MODULE 1 STRUGGLES
+- honestly not sure whats the difference between echo and print, the material explain print is an "expression", but i dont understand what that means, and how it differs from echo. I know they both output text, but is there a reason to use one over the other?
+- something i noticed when i tried to print to the console, if i tried like:
+```
+$greetings = "Hello, my name is Raihan";
+$todaysDate = date("Y-m-d");
+$php_version = PHP_VERSION;
+
+
+
+echo $greetings;
+print $greetings;
+
+echo $todaysDate;
+```
+then the output would concatenate all the outputs together, like: "Hello, my name is RaihanHello, my name is Raihan2026-04-23"
+i dont think this happens in js when you do console.log, it outputs each argument separately, but then maybe i need to add a newline character to the end of each string in php to achieve the same effect?
+
+var_dump is also has similar behavior, when i try to input like:
+```
+var_dump($greetings);
+var_dump("Today is:", $todaysDate);
+var_dump(PHP_VERSION);
+```
+
+then it will output: 
+```
+string(9) "Today is:"
+string(10) "2026-04-23"
+string(6) "8.3.30"
+```
+what i confused is mostly the second line, i expected it to output the string "Today is: 2026-04-23", but instead it outputs the string "Today is:" and then the string "2026-04-23" on the next line, which is a bit confusing to me. I thought var_dump would output all the arguments together, but it seems like it treats each argument separately and outputs them on different lines.
+actually, i just realized in the material it mention PHP_EOL, which is a constant that represents the end of line character for the current platform. But it still kinda a hassle to add PHP_EOL to the end of each string just to achieve the same effect as console.log in js, where it outputs each argument separately on a new line.
