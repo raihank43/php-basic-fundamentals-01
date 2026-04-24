@@ -46,3 +46,10 @@ actually, i just realized in the material it mention PHP_EOL, which is a constan
 ## MODULE 3 STRUGGLES
 - generally confused how to use the match expression, the syntax is different than switch else statements. And in the material it mention to invoke the statement using variables, why is that?
 - also how to use them inside for loop statements, i figured out by invoking the match expression inside the variables and then echo them down below in the loop. I still dont understand how to pass the args inside match(args) and how to use them inside the match expression, like how to compare the args with the cases and return the corresponding values. I guess with more practice and experience, it will become more intuitive to understand how to use match expressions effectively in different contexts.
+
+## MODULE 4 STRUGGLES
+- im having trouble trying to count how many users with specific roles inside an array, the materials mention about count() but it seems to only count the total number of elements in the array, not the number of elements that match a specific condition. i guess i might need to use a loop to iterate through the array and count the number of users with specific roles manually, but it seems like there should be a more efficient way to do this using built-in functions or something.
+- i dont know how to use array_column, so i will be using foreach for the addUser function
+- one thing that confuse me about my function is that it appends the new user multiple times, and then for existing user it appends only the first user multiple times. Honestly reaching a road block here.
+
+- FOLLOw UP: ok it looks like i have some logic issue, anyway i learned how to use array_column and in_array, but one thing confuses me is that the instructor advice is using 3 args in the in_array, meanwhile in the material it only uses 2 args. From what i can get this fucntions basically said: "Search this specific value (args 1) in this specific array (args 2) and return the value in an array if true", so what is the purpose of the third args? the material mention about strict mode, is it only used in strict mode?
