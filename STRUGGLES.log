@@ -53,3 +53,16 @@ actually, i just realized in the material it mention PHP_EOL, which is a constan
 - one thing that confuse me about my function is that it appends the new user multiple times, and then for existing user it appends only the first user multiple times. Honestly reaching a road block here.
 
 - FOLLOw UP: ok it looks like i have some logic issue, anyway i learned how to use array_column and in_array, but one thing confuses me is that the instructor advice is using 3 args in the in_array, meanwhile in the material it only uses 2 args. From what i can get this fucntions basically said: "Search this specific value (args 1) in this specific array (args 2) and return the value in an array if true", so what is the purpose of the third args? the material mention about strict mode, is it only used in strict mode?
+
+
+## MODULE 5 STRUGGLES
+- for task no.2, it said i need to reindex the resulting array, but im not sure how to do that.
+- to be honest, i barely understand how reduce really work even in js, mostly the args and the initial value, and how the callback function is supposed to work with those args. i understand that reduce takes a callback function and an optional initial value, and it applies the callback function to each element of the array in order to reduce it to a single value. but i find it a bit tricky to wrap my head around how the callback function is supposed to work with the accumulator and the current value, and how the initial value fits into the whole process. i guess with more practice and experience, it will become more intuitive to understand how reduce works and how to use it effectively in different contexts.
+- not sure what it means on task no.3 about "sum of the lengths of every user's email string". Im assuming i need to count the legnth of every user email and then return it as an array, the thing is that the email is string, i only know count() for counting the length of an array, but it doesnt work for a string.
+- also still not sure how to return an array from an array using array_reduce, since the material only show the example for summing up numbers. I tried adding empty array as the initial value, but it always return the string of the value, and it's only the first value in the array, not sure why
+- FOLLOW UP: for task no.4, im not sure i understand why we need to add: 
+    if (!isset($carry[$role])) {
+        $carry[$role] = 0;       // first time seeing this role: start the counter
+    }
+
+    before we begin counting the role, from what i can get isset is checking if the key exist and not null, so is it checking if the role already exist in the carry array? and if it does not exist, then we initialize the counter for that role to 0, so that we can start counting from there. but why do we need to check if the role already exist in the carry array before initializing the counter? can't we just initialize the counter for every role without checking if it already exist or not? i guess it might be to avoid overwriting existing counts for roles that have already been counted, but i'm not entirely sure about that.
