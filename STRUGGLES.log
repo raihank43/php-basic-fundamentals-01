@@ -75,3 +75,7 @@ actually, i just realized in the material it mention PHP_EOL, which is a constan
 
 ## MODULE 7 STRUGGLES
 - hmm, im not sure how to use match expression. Would've to look up for that one.
+
+## CAPSTONE STRUGGLES
+- im mainly confused when it comes of finding total amount by category, specifically how to group each category together and then sum up the total amount for each category. i understand that i can use an associative array to store the total amount for each category, but im not sure how to iterate through the transactions and update the totals for each category effectively.
+- FOLLOW UP: for bug no.3 i'd love the lines of array implementation maybe as sidenote explanation not in the code so that this one just becomes my learning journey, because as you can see i hacked through it because i initially also confused why do the spec said i need to echo with implode.
