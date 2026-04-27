@@ -72,3 +72,6 @@ actually, i just realized in the material it mention PHP_EOL, which is a constan
 - in explode function, you have int $limit in the third args, but im not really sure what it does
 - so when i tried to use array_filter to remove empty pieces, i initially went with fn($str) => $str !== " ", for the callback function. But the empty pieces are still there. Then i look up the internet apparently empty entries in explode() is "". Why is that?
 - i know in js you can do something like nested functions, like array.split.join etc, not really sure how to do that in php, so i just went with invoking function inside variables and then doing the process step by step, would love know if there's more efficient way to do this.
+
+## MODULE 7 STRUGGLES
+- hmm, im not sure how to use match expression. Would've to look up for that one.
